@@ -166,6 +166,12 @@
                       <br>
                     <label for="hero-field" class="leading-7 text-sm text-gray-400 text-left">ENTER EMAIL ADDRESS</label>
                     <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-300 rounded bg-opacity-40 border border-gray-700 focus:ring-2 focus:ring-red-900 focus:bg-transparent focus:border-red-500 text-base outline-none text-gray-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="hero-field" class="leading-7 text-sm text-gray-400 text-left">ENTER PINCODE:</label>
+                    <input type="text" id="hero-field" name="hero-field" class="w-full bg-gray-300 rounded bg-opacity-40 border border-gray-700 focus:ring-2 focus:ring-red-900 focus:bg-transparent focus:border-red-500 text-base outline-none text-gray-400 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="hero-field" class="leading-7 text-sm text-gray-400 text-left">UPLOAD A GOVT ID CARD:</label>
+                    <form action="/action_page.php" style="margin: auto; width: 20vw; ">
+                        <input type="file" id="myFile" name="filename">
+                    </form>
                     <p class="text-sm mt-2 text-gray-500 mb-8 w-full">NeedOrLend FOR CARE PROVIDERS </p>
                   <button class="inline-flex text-white bg-gray-400 border-0 py-2 px-6 focus:outline-none hover:bg-pink-100 text-gray-400 rounded text-lg">ENTER</button>
                 </div>
@@ -177,83 +183,6 @@
             </div>
           </section>
 
-        <section class="region-selection" style="margin-bottom: 30vh;">
-
-            <div class="flex justify-content-center flex-col align-items-center"
-                style="height: fit-content; margin-top: 20vh;">
-
-                <img
-                    src="data:image/png;base64,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" />
-                <h4 class="text-neutral-500" style="color: rgb(53, 52, 52); margin-top: 4vh;">SELECT YOUR REGION.</h4>
-
-                <div class="flex justify-evenly" style=" width: 100%; margin-top: 20vh;">
-                    <form action="/action_page.php">
-                        <label for="cars" class="text-2xl text-gray-600">Select State:</label>
-                        <select id="cars" name="cars" class="bg-zinc-500"
-                            style="font-size: 1.5vw; color: #1228a1; margin-left: 2vw; border: 2px solid black; border-radius: 0.6vw; background: rgba(0, 0, 0, 0.041);">
-                            <option value="">Andhra Pradesh</option>
-                            <option value="">Andaman and Nicobar Islands</option>
-                            <option value="">Arunachal Pradesh</option>
-                            <option value="">Assam</option>
-                            <option value="">Bihar</option>
-                            <option value="">Chandigarh</option>
-                            <option value="">Chhattisgarh</option>
-                            <option value="">Dadar and Nagar Haveli</option>
-                            <option value="">Daman and Diu</option>
-                            <option value="">Delhi</option>
-                            <option value="">Lakshadweep</option>
-                            <option value="">Puducherry</option>
-                            <option value="">Goa</option>
-                            <option value="">Gujarat</option>
-                            <option value="">Haryana</option>
-                            <option value="">Himachal Pradesh</option>
-                            <option value="">Jammu and Kashmir</option>
-                            <option value="">Jharkhand</option>
-                            <option value="">Karnataka</option>
-                            <option value="">Kerala</option>
-                            <option value="">Madhya Pradesh</option>
-                            <option value="">Maharashtra</option>
-                            <option value="">Manipur</option>
-                            <option value="">Meghalaya</option>
-                            <option value="">Mizoram</option>
-                            <option value="">Nagaland</option>
-                            <option value="">Odisha</option>
-                            <option value="">Punjab</option>
-                            <option value="">Rajasthan</option>
-                            <option value="">Sikkim</option>
-                            <option value="">Tamil Nadu</option>
-                            <option value="">Telangana</option>
-                            <option value="">Tripura</option>
-                            <option value="">Uttar Pradesh</option>
-                            <option value="">Uttarakhand</option>
-                            <option value="">West Bengal</option>
-
-                        </select>
-                    </form>
-                    <form action="/action_page.php">
-                        <label for="fname" class="text-2xl text-gray-600">Enter PinCode:</label>
-                        <input type="text" id="fname" name="fname"
-                            style="font-size: 1.5vw; color: #1228a1; margin-left: 2vw; border: 2px solid black; border-radius: 0.6vw; background: rgba(0, 0, 0, 0.041)">
-
-                    </form>
-                </div>
-            </div>
-        </section>
-        <hr class="w-3/4 text-gray-900 text-3xl" style="margin: auto;">
-        <section class="id_input" style="margin-bottom: 30vh;">
-            <div class="flex justify-content-center flex-col align-items-center"
-                style="height: fit-content; margin-top: 20vh;">
-                <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEbUlEQVRoge3au49UVRwH8M/ssi4Ju6wJYRWQAmKjCYX/g4WN5aoIUQRd1KjYGU3olCg0xkQLRWNhYiMqPhpRIETtjEaCD1YeEhpEEQQaIazFOYc7d3bmPmZ2Z0H9JidzH79zzvd3Xvf3GP7HDIxjuIb8wljnmsIADuAEJjFUIHsDHsNJ7ENjztnVwOOYbiq/CgotaJIZwAR+aZHd3FemBViJcwKp7TgkI/kz1mE9ppqeH8SOeH0WK/rOug12C4Tei/dp5H+SH/lpHBVmajDKvh+ff9pHvm2xTudRTQpN4biZSw2W4Uxs475eiJRttAaWYHEsI1gUr8ewDUuxCW91aCNt/Esd3j+C1/EbtuJPXMDFWNL9aUHhrnCTmcujtezV28nTwJ4K/SwpaqR1qlsxGn8v4QfZSJ3DX/H6ZT2MlOzkekqY7bHY76JY1gizuhh/dNvJHbGjb3sg2iu+jxzWFAkNlDSSZuT8bDDqEqnv0SKh/4wiI/H3Qs90use/bkbGioSKFJnACy2NzQdS3zuEj2plrMBH8t+J1bNKrR5W4fMmPp8I9l1HNPCAcFYns2OL8uXXL0zgd4HbRTyjDbdx7Jdp/SGW94FcA3fVkF+GXTKeB7Q4ZwsFR2daWIv9QAOvxT6frVl3e6x3QhuvNDlHB839chrAm/K21N0V6w7KfJ62m39I8BemsbZXpiVE3pZX4l3ldl9Cch2OC25zW2yKQodrNFwHC/COvBI7VV8BgzKHbUNZR8klfbAGwVsryAzLvMlUXlXPBXhI5kKXDvT6KHxMwdQ14R78LZjhnTAbSgzhSKx7f5UKaQ0eVRzWIRydl6P8FTzRRmYRvpBXYlsVIi1oVmR9mXDlNdhEcl8TwSt4suX9XnklXqzOfQY2xDamlCyttAbrbPZOyozha3klttbnnsMgfoxtbewk1Hz8VlqDTRjFl/LKHGu531KXdQesVbKHN0eBQ7r7IC6SN3OalWi3d7rFAL6LbT/a+nJY+NxP46UeOhnFVzIlLqu21+oimSgnBfPqKsYFAywR2CUYaN0gKXPJ7FsIy/GBjOc+bSL6DSFKnuK4Z4QN1U3MahR3dkm2HRp4WAjWJRdjUgm3lYLzkrTeIzg384XV8kf4bjWD3hNCGHNaCMLNF1IA8JTg+HWFZER2iuv2Azsjh01FQmXHbHL8Rwql5haL429hAKSqIoUxpTlGGsTrXpFKsbXrYWklRQqjnWWGYVLkdnwjS76cF743F/GKYKP1glV4WhiwUcHgHInltijTU9h2qfIEzH69J3o+q9BPYU6+SuptqTAyNwqG4UjT/fOxg0m80aGNstTbRiGichrPyZJIF2JJs59yjXOCe2Umwy0t71Iy9LD2eXe4uYngXEZuKiEZcR/H+6L09DH59HSKGs57eppg95wVCG0XAnyJ+GHBv14nRD7S80MyU/yckqB0PzEpP/JFf+GYapGd4RzNJ1KK+ZQQJV9YIDskGH9HBJ/+Won2X8W4YgVaMewa/JvTvOMf27h4T0ErKXQAAAAASUVORK5CYII=" />
-                <h4 class="text-neutral-500" style="color: rgb(53, 52, 52); margin-top: 4vh;">UPLOAD YOUR ADHAAR CARD.</h4>
-                <div>
-                    <form action="/action_page.php" style="margin: auto; margin-top: 20vh; width: 10vw;  ">
-                        <input type="file" id="myFile" name="filename">
-                    </form>
-                </div>
-            </div>
-
-        </section>
         <hr class="w-3/4 text-gray-900 text-3xl" style="margin: auto;">
         <section>
             <div class="flex justify-content-center flex-col align-items-center"
